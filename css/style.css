@@ -8,101 +8,11 @@ body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #777777;
-}
-.header_area .menu_nav {
-  width: 100%;
-}
-.header_area .navbar .nav .nav-item {
-  margin-right: 45px;
-}
-.header_area .navbar .nav .nav-item .nav-link {
-  font: 500 12px/100px "Roboto", sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 0px;
-  display: inline-block;
-}
-.header_area .navbar .nav .nav-item.submenu ul {
-  border: none;
-  padding: 0px;
-  border-radius: 0px;
-  box-shadow: none;
-  margin: 0px;
-  background: #fff;
-}
-.header_area .navbar .nav .nav-item.submenu ul .nav-item {
-  display: block;
-  float: none;
-  margin-right: 0px;
-  border-bottom: 1px solid #ededed;
-  margin-left: 0px;
-  transition: all 0.4s linear;
-}
-.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
-  line-height: 45px;
-  color: #222222;
-  padding: 0px 30px;
-  transition: all 150ms linear;
-  display: block;
-  margin-right: 0px;
-}
-.home_banner_area {
-  height: 100vh;
-  z-index: 0;
-  background: url(../img/banner/home-banner.jpg) no-repeat center center;
-  background-size: cover;
-}
-.home_banner_area .banner_inner {
-  width: 100%;
-}
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: nowrap;
-  /* margin-right: -15px; */
-  margin-left: -15px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  position: relative;
-  top: 20%;
-  left: 0%;
-  opacity: 1;
-  z-index: 0;
-}
-.home_banner_area .banner_inner .col-lg-6 {
-  height: 60vh;
-  vertical-align: middle;
-  align-self: center;
-}
-.home_banner_area .banner_inner .col-lg-6 {
-  vertical-align: middle;
-  align-self: center;
-}
-.col-lg-6 {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-.home_banner_area .banner_inner .banner_content {
-  text-align: left;
-  color: #fff;
-  margin-left: 70px;
-}
-.home_banner_area .banner_inner .banner_content h2 {
-  margin-top: 0px;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 72px;
-  margin-bottom: 20px;
-}
-.home_banner_area .banner_inner .banner_content p {
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 20px;
+  
+  background: url(../img/proshchad-pobedy1.jpg) no-repeat center center;
+    width: 100%;
+    background-size: cover;
+
 }
 .center{
   background: none;
@@ -111,7 +21,7 @@ body {
     display: contents;
 }
 li {
-  margin: 10px;
+  margin-top: 30px;
   position: relative;
   z-index: 2;
 }
@@ -123,15 +33,34 @@ ul {
   justify-content: space-between;
 }
 a{
-  color: #f9f5f5;
+	font-family: Arial;
+	font-size: 21px;
+	color: #F90404;
+	text-shadow: 
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
   text-decoration: none;
   text-transform: uppercase;
-  font-size:16px;
+  font-weight: bold;
   display: block;
   }
   a span{
       position: relative;
-      padding: 5px;
+      padding: 10px;
       transition: .5s;
   }
   a span:nth-child(1){
@@ -148,7 +77,7 @@ a{
       top: 0;
       left: 0;
       background:#ff3636;
-      padding: 5px;
+      padding: 10px;
       transition: .5s;
       transform-origin: top;
       transform: rotateX(90deg) translateY(-50%);  
@@ -162,7 +91,7 @@ a{
       top: 0;
       left: 0;
       background:#262626;
-      padding: 5px;
+      padding: 10px;
       transition: .5s;
       transform-origin: bottom;
       transform: rotateX(90deg) translateY(50%);
@@ -176,11 +105,12 @@ a{
       top: 0;
       left: 0;
       background:#262626;
-      padding: 5px;
+      padding: 10px;
       transition: .5s;
       transform-origin: bottom;
       transform: rotateX(0deg) translateY(0%);
   }
+
   a:hover span:nth-child(1)::after{  
       transform: rotateX(90deg) translateY(50%);
   }
@@ -190,7 +120,7 @@ a{
       top: 0;
       left: 0;
       background:#ff3636;
-      padding: 5px;
+      padding: 10px;
       transition: .5s;
       transform-origin: top;
       transform: rotateX(0deg) translateY(0%);
@@ -199,7 +129,6 @@ a{
       transform: rotateX(90deg) translateY(-50%);
   }
   .submenu1, .submenu2, .submenu3,.submenu4,.submenu5 {
-    background: #b5b6b740;
     position: absolute;
     display:flex;
     top: 100%;
@@ -215,14 +144,17 @@ a{
     left: -400%;
   }
   .submenu3 {
-    right: -700%;
+    right: -600%;
   }
   .submenu4 {
-    right: -500%;
+    right: -400%;
   }
-
   .submenu5 {
     right: -200%;
+  }
+  .pervi, .vtor,.trit, .chet, .pjat {
+    margin:10px;
+    
   }
  .pervii:hover .submenu1 {
     opacity: 1;
@@ -244,1149 +176,2203 @@ a{
     opacity: 1;
     transform: scaleY(1);
   }
-
-
-.do {
-  position: relative;
-  z-index: 2;
-}
-       .do:hover::after{
-        content: ""; /* Добавляемый текст */ 
-        position: absolute;
-        top: -2vh;
-        left: -1vw;
-        width: 100vw;
-        height: 100vh;
-        background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-        background-size: cover;
-        z-index: -1;
-      
-      }
-  .do:hover::before{
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-    color: #fdfbfb; /* Цвет текста */ 
-    font-size: 16px;
-    position: absolute;
-    top: 30vh;
-    left: calc(80vw - 50vw);
-    width: 50vw;
-    z-index: 3;
+  .dovoini {
+    background: url(../img/dovoini.jpg) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
   }
-  
-
-.iyun1941:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -19vw;
-  width: 100vw;
+  .dovoini::after {
+    content: "Жители и предположить не могли, что совсем скоро их судьбы беспощадно изменит и сломает война. Кто-то погибнет под первыми бомбами, кто-то успеет уйти из горящего города в эвакуацию, на передовую. А кто-то на 3 года окажется в оккупации. Но накануне минчане жили насущными бытовыми проблемами, трудились, ходили в кино, любили, рожали детей, а город рос и развивался."; /* Добавляемый текст */ 
+    font-family: Arial;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 
+      -0   -2px 4px #000000,
+       0   -2px 4px #000000,
+      -0    2px 4px #000000,
+       0    2px 4px #000000,
+      -2px -0   4px #000000,
+       2px -0   4px #000000,
+      -2px  0   4px #000000,
+       2px  0   4px #000000,
+      -1px -2px 4px #000000,
+       1px -2px 4px #000000,
+      -1px  2px 4px #000000,
+       1px  2px 4px #000000,
+      -2px -1px 4px #000000,
+       2px -1px 4px #000000,
+      -2px  1px 4px #000000,
+       2px  1px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000;
+      position: relative;
+      top: 16%;
+      line-height: 40px;
+      margin: 0 50px;
+      width: 85%;
+      text-align: center;
+      display: block;
+  }
+.iyun1941::after{
+  content: "28 июля 1941 к исходу дня на улицы Минска ворвались передовые соединения немецких танков и мотопехоты. Город был полностью оккупирован. В последующие дни и недели в городе началось формирование и размещение оккупационных структур и военного гарнизона (около 5 тыс солдат и офицеров)."; /* Добавляемый текст */ 
+	font-family: Arial;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 85%;
+    text-align: center;
+    display: block;
+}
+.iyun1941 {
+  background: url(../img/iyun41.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
 }
-.iyun1941:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  width: 50vw;
-  z-index: 3;
+.iyul1941::after{
+  content: "5 июля 1941 на юго-западной окраине Минска на ул. Широкой, в 300 м от Московского шоссе, гитлеровцы создали концлагерь СС для временного содержания советских военнопленных и евреев-мужчин, первых вывозили в лагерь в Масюковщине вторых- в Благовещину ( Тростенецкий лагерь смерти)."; /* Добавляемый текст */ 
+	font-family: Arial;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 85%;
+    text-align: center;
+    display: block;
 }
-
-.iyul1941:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -26vw;
-  width: 100vw;
+.iyul1941{
+  background: url(../img/iyul41.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
 }
-.iyul1941:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-width: 50vw;
-z-index: 3;
+.aug1941::after{
+  content: "14 августа 1941 в Минском гетто проведена первая облава (последующие проведены 26 и 31 августа). Под предлогом отправки на работу часть мужчин-узников гетто были вывезены в тюрьмы и расстреляны. "; /* Добавляемый текст */ 
+	font-family: Arial;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 85%;
+    text-align: center;
+    display: block;
 }
-
-.august1941:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -32vw;
-  width: 100vw;
+.aug1941 {
+background: url(../img/aug1941.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
 }
-.august1941:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-width: 50vw;
-z-index: 3;
+.sep1941::after{
+  content: "1 сентября 1941 года в Минск прибыл палач белорусского народа генеральный комиссар округа «Беларусь» В. Кубе. До глубокой ночи он принимал дела у начальника тыла группы армии «Центр» генерала М. Шенкендорфа. Главным комиссаром в Минске В. Кубе назначил штандартенфюрера Паульсена, окружным – Янецке."; /* Добавляемый текст */ 
+	font-family: Arial;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 85%;
+    text-align: center;
+    display: block;
 }
-.sept1941:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -40vw;
-  width: 100vw;
+.sep1941 {
+  background: url(../img/sep1941.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
 }
-.sept1941:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-width: 50vw;
-z-index: 3;
+.oct1941::after{
+  content: "26 октября 1941 года фашисты провели в городе устрашающую акцию – публичная повешение 12 подпольщиков попавших в застенки СД."; /* Добавляемый текст */ 
+	font-family: Arial;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 85%;
+    text-align: center;
+    display: block;
 }
-
-.oct1941:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -50vw;
-  width: 100vw;
+.oct1941 {
+  background: url(../img/oct1941.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
 }
-.oct1941:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-width: 50vw;
-z-index: 3;
+.nov1941::after{
+  content: "17 ноября 1941 года распоряжение В. Кубе и комиссара Кайзера еврейским детям запрещено посещение школ. В Минск приехал Вильгельм Янецке, назначенный городским комиссаром – главой гражданской оккупационной администрации города."; /* Добавляемый текст */ 
+	font-family: Arial;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 85%;
+    text-align: center;
+    display: block;
 }
-
-.nov1941:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -59vw;
-  width: 100vw;
+.nov1941 {
+  background: url(../img/nov1941.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
 }
-.nov1941:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-width: 50vw;
-z-index: 3;
+ .dec1941::after{
+  content: "13 декабря 1941 года оккупационный отдел по учету рабочей силы зарегистрировал в Минске 13 700 мужчин, 20 700 женщин, 34 400 детей."; /* Добавляемый текст */ 
+	font-family: Arial;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 85%;
+    text-align: center;
+    display: block;
 }
-
- .dec1941:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -67vw;
-  width: 100vw;
+.dec1941 {
+  background: url(../img/dec1941.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.dec1941:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-width: 50vw;
-z-index: 3;
 } 
-  .yan1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -8vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
+  .yan1942::after{
+    content: "4 января 1942 года. В 4 часа утра в городе намечалось поднять восстание советских патриотов и военнопленных. По оценке немецко-фашистских оккупантов, в восстании на начальном этапе должны были участвовать 2 500 человек, с увеличением числа восставших до 10 000 за счет военнопленных освобожденных из лагерей. Восстание не началось из-за ареста руководства по доносу агента «Абвера». "; /* Добавляемый текст */ 
+    font-family: Arial;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 
+      -0   -2px 4px #000000,
+       0   -2px 4px #000000,
+      -0    2px 4px #000000,
+       0    2px 4px #000000,
+      -2px -0   4px #000000,
+       2px -0   4px #000000,
+      -2px  0   4px #000000,
+       2px  0   4px #000000,
+      -1px -2px 4px #000000,
+       1px -2px 4px #000000,
+      -1px  2px 4px #000000,
+       1px  2px 4px #000000,
+      -2px -1px 4px #000000,
+       2px -1px 4px #000000,
+      -2px  1px 4px #000000,
+       2px  1px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000;
+      position: relative;
+      top: 16%;
+      line-height: 40px;
+      margin: 0 50px;
+      width: 85%;
+      text-align: center;
+      display: block;
   }
-  .yan1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  width: 50vw;
-  z-index: 3;
+  .yan1942 {
+  background: url(../img/jan1942.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
   }
-  .feb1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -16vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
+  .feb1942::after{
+    content: "18 февраля 1942 года Из 70 содержащихся в детской трудовой колонии в пригородном Козыреве детей 42 подростка отправлены оккупантами в Германию для использования в качестве рабочей силы."; /* Добавляемый текст */ 
+    font-family: Arial;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 
+      -0   -2px 4px #000000,
+       0   -2px 4px #000000,
+      -0    2px 4px #000000,
+       0    2px 4px #000000,
+      -2px -0   4px #000000,
+       2px -0   4px #000000,
+      -2px  0   4px #000000,
+       2px  0   4px #000000,
+      -1px -2px 4px #000000,
+       1px -2px 4px #000000,
+      -1px  2px 4px #000000,
+       1px  2px 4px #000000,
+      -2px -1px 4px #000000,
+       2px -1px 4px #000000,
+      -2px  1px 4px #000000,
+       2px  1px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000;
+      position: relative;
+      top: 16%;
+      line-height: 40px;
+      margin: 0 50px;
+      width: 85%;
+      text-align: center;
+      display: block;
   }
-
-  .feb1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  width: 50vw;
-  z-index: 3;
+  .feb1942 {
+  background: url(../img/feb.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
   }
-
-  .mart1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -25vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .mart1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  width: 50vw;
-  z-index: 3;
-  }
-
-  .apr1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -31vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .apr1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  width: 50vw;
-  z-index: 3;
-  }
-          .iyun1941,.iyul1941, .august1941, .sept1941, .oct1941, .nov1941, .dec1941,
-.iyun1942, .feb1942, .mart1942, .apr1942, .maj1942,.iyul1942, .august1942, .sept1942, .oct1942, .nov1942, .dec1942,
-.iyun1943, .feb1943, .mart1943, .apr1943, .maj1943,.iyul1943, .august1943, .sept1943, .oct1943, .nov1943, .dec1943,
-.iyun1944, .feb1944, .mart1944, .apr1944, .maj1944, .iyul1944, .august1944, .sept1944, .oct1944, .nov1944, .dec1944,
-.iyun1945, .feb1945, .mart1945, .apr1945, .maj1945, .posle	{
+  .mart1942::after{
+content: "27 марта 1942 года гитлеровцами схвачен и после долгих допросов и пыток повешен один из руководителей и организатора Минского подполья И. Л. Казинец, в 1965 году посмертно удостоенный звания Героя Советского Союза. "; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
   position: relative;
-  z-index: 2;
-}  
-  .maj1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -39vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
   }
-  .maj1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -10vw;
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .iyun1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -44vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .iyun1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -44vw;
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .iyul1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -51vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .iyul1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -50vw;
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .august1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -57vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .august1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left:  -50vw;
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .sept1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -64vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .sept1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left:-50vw;
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .oct1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -74vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .oct1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -50vw;
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .nov1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -83vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .nov1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -50vw;
-  width: 50vw;
-  z-index: 3;
-  }
-   
-   .dec1942:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -92vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .dec1942:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -60vw;
-  width: 50vw;
-  z-index: 3;
-  }
-
-
-
-  .yan1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -3vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .yan1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: calc(80vw - 50vw);
-  width: 50vw;
-  z-index: 3;
-  }
-  .feb1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -11vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .feb1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: calc(80vw - 60vw);
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .mart1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -20vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .mart1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: calc(80vw - 66vw);
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .apr1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -26vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .apr1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: calc(80vw - 66vw);
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .maj1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -34vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .maj1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: calc(80vw - 75vw);
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .iyun1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -40vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .iyun1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: calc(80vw - 84vw);
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .iyul1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -46vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .iyul1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: calc(80vw - 90vw);
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .august1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -53vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .august1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: calc(80vw - 94vw);
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .sept1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -61vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .sept1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -40vw;
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .oct1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -70vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .oct1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -46vw;
-  width: 50vw;
-  z-index: 3;
-  }
-  
-  .nov1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -79vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .nov1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -54vw;
-  width: 50vw;
-  z-index: 3;
-  }
-   
-   .dec1943:hover::after{
-    content: ""; /* Добавляемый текст */ 
-    position: absolute;
-    top: -7vh;
-    left: -88vw;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-  
-  }
-  .dec1943:hover::before{
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-  color: #fdfbfb; /* Цвет текста */ 
-  font-size: 16px;
-  position: absolute;
-  top: 30vh;
-  left: -60vw;
-  width: 50vw;
-  z-index: 3;
-  }
-
-
-
-.yan1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  .mart1942 {
+  background: url(../img/mart1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.yan1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-.feb1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  }
+  .apr1942::after{
+ content: "18 апреля 1942 года Под Минском десантирована советская разведывательная группа П. А. Барсуковского для укрепления находившейся в городе разведгруппы С. К. Вишневского Конспиративная квартира и рация разведчиков размещались в одном из домов в Добромысленском переулке."; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+  }
+  .apr1942 {
+  background: url(../img/apr1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.feb1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.mart1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  }
+  .maj1942::after{
+content: "1 мая 1942 года  В целях устрашения населения и подавления подпольного движения гитлеровцы публично казнили 28 руководителей и активных участников подполья, в том числе членов подпольного Военного совета партизанского движения И. К. Кабушкина, Д. И. Копанцева, М. М. Никитина, А. Чижика и др., членов горкома КП(б)Б И. П. Казинца, С. И. Зайца, Г. М. Семенова. В Центральном сквере города, на месте казни подпольщиков, после войны установлен памятник. Были расстреляны также 251 подпольщик. "; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .maj1942 {
+  background: url(../img/may1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.mart1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.apr1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+  .iyun1942::after{
+content: "26 июня на вагоноремонтном заводе организована молодёжная подпольная группа Ивана Кухто состоявшая из восьми человек"; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .iyun1942 {
+  background: url(../img/ijul1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.apr1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.maj1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+  .iyul1942::after{
+content: "31 июля 1942 года из Минска в Берлин от гауляйтера Кубе поступил рапорт о полном «освобождении от евреев» Минской области. В рапорте сообщалось также о том, что в городе осталось еще 2,6 тыс. западных и 6 тыс. местных евреев."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .iyul1942 {
+  background: url(../img/yul1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.maj1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.iyun1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+  .avg1942::after{
+ content: "5 августа 1942 года Из Минска в Шпитталь (Австрия) прибыл состав с остарбайтерами: по дороге 124 человекам удалось бежать. В ЦК КП(б)Б переправлен первый письменный отчет о работе Минского патриотического подолья. А так же вышел 2-ой номер подпольной газеты «Звязда»."; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+  }
+  .avg1942 {
+  background: url(../img/avg1942.jpeg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.iyun1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.iyul1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+  .sept1942::after{
+content: "26 сентября 1942 года гитлеровцы осуществили второй тяжелый удар по Минскому подолью, начав новую волну массовых арестов, в ходе которых были схвачены и брошены в застенки СД сотни подпольщиков. В большинстве они погибали в «душегубке», на висельницах, в лагерях смерти."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .sept1942 {
+  background: url(../img/sep1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.iyul1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.august1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+  .oct1942::after{
+ content: "2 октября схвачен один из организаторов и руководителей Минского подполья, создатель подпольных групп на плодовоовощных базах №1 и №2, секретарь Октябрьского подполья РК КП(б)Б Н.К.Корженевский.7 октября Схвачен и замучен гитлеровцами руководитель подпольной организации в Пушкинском поселке Минска Е.М. Баранов. 9 октября Арестованы и замучены в фашистских застенках М.П. и М.М. Вороновы – участники подготовки и выпуска подпольной газеты «Звязда» (на их квартире находилась подпольная типография)."; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+  }
+  .oct1942 {
+  background: url(../img/oct1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.august1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.sept1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  }
+  .nov1942::after{
+ content: "17 ноября 1942 года из секретной карты стало известно о намерениях гитлеровцев оставить в Минске только 100 тыс. человек местного населения (на начало 1941 г. В нем было 204тыс.) и поселить в нём 50тыс. немцев."; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+  }
+  .nov1942 {
+  background: url(../img/nov1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.sept1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.oct1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+   .dec1942::after{
+content: "5 декабря 1942 года Оккупационные власти города объявили в Минске военное положение."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .dec1942 {
+  background: url(../img/dec1942.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.oct1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.nov1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  }
+  .yan1943::after{
+ content: "ЯНВАРЬ 1943 года Возобновлено издание газеты «Звязда» как органа ЦК и Минского подпольного обкома КП(б)Б и начато издание газеты «Чырвоная змена» как органа ЦК и Минского подпольного обкома ПКСМБ. Редактором обеих газет был М.П. Барашков."; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+  }
+  .yan1943 {
+  background: url(../img/jan1943.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.nov1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
- .dec1944:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  }
+  .feb1943::after{
+content: "4 февраля 1943 года гитлеровцами схвачен и замучен в фашистских застенках активный участник Минского подполья, с мая 1942 руководитель оперативной группы по борьбе с вражескими агентами и провокаторами И.К. Кабушкин."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .feb1943 {
+  background: url(../img/feb1943.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-}
-.dec1944:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-.yan1945:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+  .mart1943::after{
+ content: "5 марта 1943 уничтожен один из лидеров белорусских националистов Ф. Акинчиц"; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+  }
+  .mart1943 {
+  background: url(../img/mart1943.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-}
-.yan1945:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-.feb1945:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  }
+  .apr1943::after{
+content: "9 апреля по учёту биржи труда в Минске численность 56.000 трудоспособных жителей при общем количестве в 105.000 человек"; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .apr1943 {
+  background: url(../img/apr1943.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.feb1945:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.mart1945:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  }
+  .maj1943::after{
+    content:"21 мая 1943 Подпольщики группы В. Д. Шатько заминированли на ст. метро Минск пассажирский эшелон с авиационными бомбами (взорвался на станции Руденск,  уничтожив одновременно стоявший рядом эшелон с топливом,  часть станционных путей и построек) и эшелон с горючим.";
+    font-family: Arial;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 
+      -0   -2px 4px #000000,
+       0   -2px 4px #000000,
+      -0    2px 4px #000000,
+       0    2px 4px #000000,
+      -2px -0   4px #000000,
+       2px -0   4px #000000,
+      -2px  0   4px #000000,
+       2px  0   4px #000000,
+      -1px -2px 4px #000000,
+       1px -2px 4px #000000,
+      -1px  2px 4px #000000,
+       1px  2px 4px #000000,
+      -2px -1px 4px #000000,
+       2px -1px 4px #000000,
+      -2px  1px 4px #000000,
+       2px  1px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000;
+      position: relative;
+      top: 16%;
+      line-height: 40px;
+      margin: 0 50px;
+      width: 85%;
+      text-align: center;
+      display: block;
+  }
+  .maj1943 {
+  background: url(../img/maj1943.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.mart1945:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.apr1945:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+  .iyun1943::after{
+content: "28 июня 1943 в результате двух диверсий проведённых подпольщиками группы Д.Г. Гневко на ТЭЦ-2, город был лишён электроснабжения на 12 часов."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .iyun1943 {
+  background: url(../img/ijun1943.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
-}
-.apr1945:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
-}
-
-.maj1945:hover::after{
-  content: ""; /* Добавляемый текст */ 
-  position: absolute;
-  top: -7vh;
-  left: -1vw;
-  width: 100vw;
+  } 
+  .iyul1943::after{
+content: "12 июля 1943 с участием высокопоставленных служащих рейха в Минске прошло второе крупное совещание начальников биржи труда и штабов по вопросам захвата и поставки рабочей силы в Германию"; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .iyul1943 {
+  background: url(../img/ijul1943.jpg) no-repeat center center;
+  width: 100%;
   height: 100vh;
-  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
   background-size: cover;
-  z-index: -1;
-
+  }
+  .avg1943::after{
+ content: "30 августа 1943 спецгруппой в Минске подложены магнитные мины. В 21:00 на станции Уза (20 км от Гомеля) было взорвано 4 цистерны с горючим, от которых загорелось ещё 6 цистерн"; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+  }
+  .avg1943 {
+  background: url(../img/avg1943.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .sept1943::after{
+content: "22 сентября 1943 года в результате диверсионной операции «Возмездие» ликвидирован руководитель оккупационной администрации Белоруссии гаулейтер Вильгельма Кубе. Операцию провели три девушки-разведчицы — Надежда Троян, Мария Осипова и Елена Мазаник."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 56%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .sept1943 {
+  background: url(../img/sept1943.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .oct1943::after{
+ content: "21 октября Начавшийся погром в Минском гетто практически завершил уничтожение его узников и положил конец существованию еврейского концлагеря в городе."; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 56%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+  }
+  .oct1943 {
+  background: url(../img/oct1943.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .nov1943::after{
+content: "7 ноября В бою с гитлеровцами погиб один из организаторов минского молодёжного подполья, руководитель крупной подпольной организации «Андрюша» Н.А. Кедышко "; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .nov1943 {
+  background: url(../img/nov1943.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+   .dec1943::after{
+content: "25 декабря гитлеровцы казнили группу минских подпольщиц (Н. П. Моисееву, Л. А. и М. П. Чижевских), готовивших убийство генерального комиссара Беларуси группенфюрера СС и генерал-лейтенанта полиции Курта фон Годберга."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+  }
+  .dec1943 {
+  background: url(../img/dec1943.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+.yan1944::after{
+content: "25 января 1944 начал действовать в Минский Южный подпольный горком ЛКСМБ, возглавлявший работу подпольных молодёжных организаций и групп в Ворошиловском, Сталинском и Октябрьском районах города Минска."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
 }
-.maj1945:hover::before{
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-color: #fdfbfb; /* Цвет текста */ 
-font-size: 16px;
-position: absolute;
-top: 30vh;
-left: calc(80vw - 50vw);
-width: 50vw;
-z-index: 3;
+.yan1944 {
+  background: url(../img/jan1944.png) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
 }
-       .posle:hover::after{
-        content: ""; /* Добавляемый текст */ 
-        position: absolute;
-        top: -2vh;
-        left: -86vw;
-        width: 100vw;
-        height: 100vh;
-        background: url(../img/vechernii-minsk.jpg) no-repeat center center;
-        background-size: cover;
-        z-index: -1;
-      
-      }
-  .posle:hover::before{
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
-    color: #fdfbfb; /* Цвет текста */ 
-    font-size: 16px;
-    position: absolute;
-    top: 30vh;
-    left: -60vw;
-    width: 50vw;
-    z-index: 3;
+.feb1944::after{
+content: "В феврале в здании на площади Свободы гитлеровцами приговорён к смертной казни немецкий антифашист Фриц Шменкель, который посмертно был удостоен звания Героя Советского Союза."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.feb1944 {
+  background: url(../img/feb1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.mart1944::after{
+content: "В марте оккупанты при участии марионеточного правительства в Минске, так называемой Белорусской центральной рады, начали создание Белорусской крайовой рады - военизированного фашистско-националистического формирования для борьбы с партизанами и войсками Красной Армии."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.mart1944 {
+  background: url(../img/mart1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.apr1944::after{
+content: "10 апреля подпольщики вагоноремонтного завода взорвали путеукладчик."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.apr1944 {
+  background: url(../img/apr1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.mai1944::after{
+content: "25 мая гитлеровцы начали одну из крупнейших карательных операций на территории Минского и целого ряда других районов,  имевшую цель уничтожение партизанских формирований и захват населения для вывоза в Германию. Они были вынуждены прекратить её в связи с наступлением Советской Армии."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.mai1944 {
+  background: url(../img/mai1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.iyun1944::after{
+content: "29 июня началась наступательная Минская операция войск 3-го (генерал армии И. Д. Чернявский), и 2-го (генерал-полковник Г. Ф. Захаров) и 1-го (маршал К. К. Рокоссовский)  Белорусских фронтов, в результате которого была освобождена столица Беларуси и завершён 1-ый этап крупнейший стратегической Белорусской операции 1944 года."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.iyun1944 {
+  background: url(../img/ijun1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.iyul1944::after{
+content: "3 июля на рассвете советские войска нанесли решающий удар по находившимся в городе 3 пехотным и 1 танковой дивизиям,  3 полкам и СС и другим спецподразделением гитлеровцев. С востока и северо-востока в город ворвался 2-й гвардейской танковый корпус, с севера - части 5-й гвардейской танковой армии и передовые подразделения 11-й гвардейской 31-ой армии 3-го Белорусского фронта, в середине дня с юго-востока – 1-й гвардейский танковый корпус и части 3-й армии 1-го Белорусского фронта."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.iyul1944 {
+  background: url(../img/ijul1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.avg1944::after{
+ content: "20 августа открыта первая после освобождения Беларуси подписка на республиканские газеты «Звязда», «Советская Белоруссия», а также «Чырвоная змена». Начал работу пивной завод."; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+}
+.avg1944 {
+  background: url(../img/avg1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.sept1944::after{
+ content: "20 сентября чрезвычайная государственная комиссия сделала сообщение о зверствах гитлеровских оккупантов в Минске."; /* Добавляемый текст */ 
+ font-family: Arial;
+ font-size: 24px;
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   line-height: 40px;
+   margin: 0 50px;
+   width: 85%;
+   text-align: center;
+   display: block;
+}
+.sept1944 {
+  background: url(../img/sept1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.oct1944::after{
+content: "2 октября первым среди ВУЗов в городе возобновил работу  Минский педагогический и учительский институт. 8 октября Прошёл воскресник по восстановлению разрушенного города. В нём участвовали 33 тыс.  минчан очистивших от завалов и мусора 15,5 тыс. м. кв., собравшие 1,3 млн кирпичей. 403 м³ бутового камня, засыпавшие  2,5 тыс. м³ воронок."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.oct1944 {
+  background: url(../img/oct1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.nov1944::after{
+content: "22 ноября Первые 100 кг конфет выпустила восстановленная фабрика Коммунарка."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.nov1944 {
+  background: url(../img/nov1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+ .dec1944::after{
+content: "30 декабря Премьерой оперы Е. Тикоцкого «Олеся» возобновил работу в освобождённом Минске Государственный театр оперы и балета БССР."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.dec1944 {
+  background: url(../img/dec1944.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.jan1945::after{
+content: "15 января 1945 издано постановление СНК БССР в соответствии с которым в Минске был организован приёмно-распределительный пункт для репатриированных из освобождённых государств советских граждан с пропускной способностью в 500 человек в сутки."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.jan1945 {
+  background: url(../img/jan1945.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.feb1945::after{
+content: "28 февраля Закончена отливка памятника Ленину взамен разрушенного оккупантами, 1 мая он был установлен на площади у дома правительства."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.feb1945 {
+  background: url(../img/feb1945.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.mart1945::after{
+content: "30 марта образован Минский сетевой узел положивший начало истории Минских кабельных сетей."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.mart1945 {
+  background: url(../img/mart1945.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.apr1945::after{
+content: "14 апреля 1945 года на заводе имени Кирова проведено первое пробная отливка чугуна."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 35%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.apr1945 {
+  background: url(../img/apr1945.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.mai1945::after{
+content: "8 мая Врач-патологоанатом Юрий Гулькевич в составе специальной комиссии в городе Бух, в 50 км от Берлина, осуществил основную часть работы по вскрытию трупов Геббельса и членов его семьи, Ганса Кребса, а также участвовал с будущем президентом АН БССР Николаем Гращенковым в идентификации трупов Гитлера и Евы Браун."; /* Добавляемый текст */ 
+font-family: Arial;
+font-size: 24px;
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 85%;
+  text-align: center;
+  display: block;
+}
+.mai1945 {
+  background: url(../img/mai1945.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.poslevoini::after{
+	content: "Масштабные разрушения поставили вопрос о целесообразности восстановительных работ. Звучали предложения о строительстве нового города в нескольких километрах от руин старого, разрушенного Минска. Все-таки победила точка зрения о возрождении столицы на ее прежнем месте. И вот уже прошло почти 80 лет как Минчане трудились над восстановлением родного горада, и продолжают поддерживать уют и чистоту любимого города."; 
+	font-family: Arial;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 85%;
+    text-align: center;
+    display: block;
+}
+  .poslevoini {
+  background: url(../img/s1200.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
   }
